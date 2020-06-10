@@ -1,0 +1,87 @@
+html {
+  max-width: 960px;
+  height: 100%;
+  margin: auto;
+  background-color: #1A1A1A;
+  color: white;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  /* border-right: 1px solid red;
+  border-left: 1px solid red; */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+}
+
+header span {
+  font-size: 18px;
+  padding: 4px 8px;
+  border: 1px dotted white;
+}
+
+header li {
+  display: inline-block;
+  padding: 0.3em;
+  font-size: 18px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+}
+
+hr {
+  margin: 64px auto 32px;
+  width: 50%;
+  border-top: 12px dotted rgb(0,0,0,0.25);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.circle-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 48px 0;
+  padding: 0;
+}
+
+.circle {
+  width: 240px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: beige;
+  border: 2px solid rgb(0,0,0,0.1);
+  border-radius: 100%;
+}
+
+.circle img {
+  display: inline-block;
+  width: 240px;
+  height: 240px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.circle span {
+  position: absolute;
+  margin: auto;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 600;
+}
