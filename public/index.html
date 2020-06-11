@@ -6,11 +6,12 @@
         <meta charset="UTF-8">
         <title>Joshua N. Ruiz</title>
         <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+        <script src="javascript/scripts.js"></script>
     </head>
 
     <body>
         <header>
-            <span>Joshua N. Ruiz</span>
+            <span>JNR</span>
             <ul>
                 <li>
                     <a href="">About</a>
@@ -24,21 +25,24 @@
             </ul>
         </header>
 
+        <!--------------------------->
+        <!-- CIRCLE HEADER SECTION -->
+        <!--------------------------->
+
         <div class="circle-container">
-            <div class="circle">
-                <img src="images/development.jpg" alt="development"/>
+            <div id="dev-circle" class="circle" onmouseover="devMouseover()" onmouseout="devMouseout()">
                 <span>DEVELOPMENT</span>
             </div>
-            <div class="circle">
-                <img src="images/music.jpg" alt="music production"/>
+            <div id="music-circle" class="circle">
                 <span>MUSIC PRODUCTION</span>
             </div>
-            <div class="circle">
-                <img src="images/learning.jpeg" alt="learning"/>
+            <div id="learning-circle" class="circle">
                 <span>LEARNING</span>
             </div>
         </div>
+
         <hr/>
+
         <h1>Projects</h1>
         <ul>
             <li>This website</li>

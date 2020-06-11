@@ -65,23 +65,27 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: beige;
-  border: 2px solid rgb(0,0,0,0.1);
+  background-size: cover;
+  background-position: center;
+  border: 2px solid rgb(255, 255, 255, 0.4);
   border-radius: 100%;
-}
-
-.circle img {
-  display: inline-block;
-  width: 240px;
-  height: 240px;
-  border-radius: 100%;
-  object-fit: cover;
-}
-
-.circle span {
-  position: absolute;
-  margin: auto;
   color: white;
   font-size: 1.5em;
   font-weight: 600;
+}
+
+.circle:hover {
+  cursor: pointer;
+}
+
+#dev-circle {
+  background-image: url("../images/development.jpg");
+}
+
+#music-circle {
+  background-image: url("../images/music.jpg");
+}
+
+#learning-circle {
+  background-image: url("../images/learning.jpeg");
 }
