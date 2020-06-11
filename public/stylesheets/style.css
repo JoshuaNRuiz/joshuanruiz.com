@@ -10,8 +10,6 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  /* border-right: 1px solid red;
-  border-left: 1px solid red; */
 }
 
 header {
@@ -19,10 +17,10 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 0px;
+  font-size: 18px;
 }
 
 header span {
-  font-size: 18px;
   padding: 4px 8px;
   border: 1px dotted white;
 }
@@ -30,7 +28,7 @@ header span {
 header li {
   display: inline-block;
   padding: 0.3em;
-  font-size: 18px;
+  
 }
 
 header a {
@@ -72,10 +70,11 @@ hr {
   color: white;
   font-size: 1.5em;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .circle:hover {
-  cursor: pointer;
+  background-color: rgba(0,0,0,0.5);
 }
 
 #dev-circle {
@@ -88,4 +87,32 @@ hr {
 
 #learning-circle {
   background-image: url("../images/learning.jpeg");
+}
+
+.biography h1 {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.biography div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.biography img {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+
+.biography p {
+  width: 600px;
+  padding: 32px;
+  font-size: 18px;
 }
