@@ -1,0 +1,3 @@
+[submodule "projects/spotify-tracker"]
+	path = projects/spotify-tracker
+	url = https://github.com/JoshuaNRuiz/spotify-tracker.git
