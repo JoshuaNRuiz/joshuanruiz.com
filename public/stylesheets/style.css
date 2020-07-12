@@ -2,6 +2,7 @@ html {
   max-width: 960px;
   height: 100%;
   margin: auto;
+  padding: 0 16px;
   background-color: #1A1A1A;
   color: white;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -28,7 +29,6 @@ header span {
 header li {
   display: inline-block;
   padding: 0.3em;
-  
 }
 
 header a {
@@ -36,83 +36,91 @@ header a {
   color: white;
 }
 
+header a:hover {
+  color: #cc1461;
+}
+
+header a img {
+  margin: auto 0;
+  width: 16px;
+  height: 16px;
+}
+
+header a img:hover {
+  color: #cc1461;
+}
+
 h1 {
-  margin: 0;
+  text-align: center;
 }
 
 hr {
-  margin: 64px auto 32px;
+  margin: 32px auto 32px;
   width: 50%;
-  border-top: 12px dotted rgb(0,0,0,0.25);
+  border-top: 12px dotted rgba(255, 255, 255, 0.5);
   border-left: none;
   border-right: none;
   border-bottom: none;
 }
 
-.circle-container {
+/* 
+  ############ BIOGRAPHY SECTION ################
+*/
+
+.biography {
+  margin: 32px 0 0 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 48px 0;
-  padding: 0;
-}
-
-.circle {
-  width: 240px;
-  height: 240px;
-  display: flex;
   align-items: center;
   justify-content: center;
-  background-size: cover;
-  background-position: center;
-  border: 2px solid rgb(255, 255, 255, 0.4);
-  border-radius: 100%;
-  color: white;
-  font-size: 1.5em;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.circle:hover {
-  background-color: rgba(0,0,0,0.5);
-}
-
-#dev-circle {
-  background-image: url("../images/development.jpg");
-}
-
-#music-circle {
-  background-image: url("../images/music.jpg");
-}
-
-#learning-circle {
-  background-image: url("../images/learning.jpeg");
-}
-
-.biography h1 {
-  display: block;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
-
-.biography div{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
 }
 
 .biography img {
-  flex-shrink: 0;
-  width: 120px;
-  height: 120px;
+  margin: 16px;
+  width: 200px;
+  height: 200px;
   border-radius: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .biography p {
-  width: 600px;
-  padding: 32px;
-  font-size: 18px;
+  flex-basis: 65%;
+  margin: 0;
+  font-size: 16px;
+}
+
+/* 
+  ############ HIGHLIGHTS SECTION ################
+*/
+
+.highlights {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 32px;
+}
+
+.highlight {
+  padding: 16px;
+  margin: 16px 16px;
+  flex-grow: 1;
+  flex-basis: 40%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.highlight h2 {
+  margin: 0;
+  color: #cc1461;
+}
+
+.highlight h3 {
+  margin: 0 0 0 4px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.highlight p {
+  margin: 16px 0 0 0;
 }
